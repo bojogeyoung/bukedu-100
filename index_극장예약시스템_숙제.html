@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            border: 1px solid #eee;
+            background-color: rgb(85, 219, 236);
+            float: left;
+            text-align: center;
+            color: #fff;
+             /* text-shadow: 2px 1px 3px #000; */
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+ 
+         
+
+    <!-- <p>극장의 정원을 입력하세요.</p>
+    <p>입력된 값으로 임의의 행열을 구해서 테이블작성하기 </p> -->
+
+
+
+    <!-- 버튼, div, input -->
+
+    <script>
+        // let box = document.getElementById("btn");
+
+        // btn[0].addEventListener("click", button);
+
+
+       // function button() {
+            
+
+       // }
+       
+    
+
+   // let result = document.write();
+       
+    //function result (){ 
+          
+        for (let j = 0; j < 10; j++) {
+              
+                for (i = 1; i < 10; i++) {
+               
+                    document.write("<div>" + (j+1) + "열" + i + "번</div>");         
+                }
+           
+            }
+           
+   // }
+
+    // 
+   
+        //키이벤트   
+        //keydown: 사용자가 키를 누를 때 발생합니다.
+        //keyup: 사용자가 키를 뗄 때 발생합니다.
+        //keypress: 사용자가 키를 누르고 떼는 동작이 완료될 때 발생합니다.
+
+       // btn.addEventListener("click", function(event)){
+       //     if(event.keyCode == 13)
+       //  }
+    
+         
+       let btn = document.getElementsByTagName("div"); 
+       for(let a = 0; a<btn.length; a++) {
+      
+       btn[a].addEventListener("mouseover", changePic);
+       btn[a].addEventListener("mouseout", changePic2);
+
+       function changePic(){
+            this.style.color = "blue";
+        }
+
+        function changePic2(){
+            this.style.color = "";
+        }
+          }
+     
+ 
+        btn.addEventListener("click", function(){
+        alert("예약되었습니다.")
+      });
+
+        
+
+
+ 
+
+      //onclick 이벤트 여러개 적용 불가능 /addEventListener 이벤트 여러개 적용 가능
+
+
+ 
+     
+        
+
+    </script>
+
+</body>
+
+</html>
